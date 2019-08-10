@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_prof"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/gradinat"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_prof"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <customControls.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="ویرایش پروفایل"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_backk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@id/guide_line_prof"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorGrayLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/large_margin"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:background="@drawable/bottomline"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <customControls.CustomTextView
+                    android:id="@+id/userNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mahdiDeymi"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <customControls.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام کاربری"
+                    android:layout_below="@id/userNameValue"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/bottomline"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <customControls.CustomTextView
+                    android:id="@+id/nameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مهدی دیمی"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <customControls.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نام و نام خانوادگی"
+                    android:layout_below="@id/nameValue"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/bottomline"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <customControls.CustomTextView
+                    android:id="@+id/emailValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mahdideymi4709@gmail.com"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <customControls.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ایمیل"
+                    android:layout_below="@id/emailValue"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/bottomline"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <customControls.CustomTextView
+                    android:id="@+id/cityValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مشهد"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <customControls.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="شهر"
+                    android:layout_below="@id/cityValue"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <customControls.CustomTextView
+                    android:id="@+id/stateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="خراسان رضوی"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <customControls.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="استان"
+                    android:layout_below="@id/stateValue"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
